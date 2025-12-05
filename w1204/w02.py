@@ -22,6 +22,7 @@ element=browser.find_element(By.XPATH,'//*[@id="main_pack"]/section[2]/div/div[2
 element.click()
 
 
+
 input("대기")
 
 # # input(글자 입력) 명령어

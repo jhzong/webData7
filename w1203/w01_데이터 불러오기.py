@@ -1,9 +1,11 @@
-import requests
-from bs4 import BeautifulSoup
-from selenium import webdriver
 import time
 import os
 import csv
+import requests
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 # # 1.requests로 정보가져오기
 # url="http://www.naver.com"

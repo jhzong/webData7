@@ -45,7 +45,7 @@ print(weather[0],weather[2])
 today_weather=f"기온:{weather[0]} / 날씨:{weather[2]}"
 
 # 최고/최저
-weather=soup.find('div',{'class':'DailyBoardView-module__weather_temperature___pOAGy'}).text.strip().replace(' ','').split('\n')
+temp_HL=soup.find('div',{'class':'DailyBoardView-module__weather_temperature___pOAGy'}).text.strip().replace(' ','').split('\n')
 
 # 날짜
 today=datetime.today()
@@ -71,7 +71,7 @@ print(now)
 # msg=MIMEText(content)
 # msg['From']='jhzong@naver.com'# 보내는메일
 # msg['To']='jhzong05@gmail.com'# 받는주소
-# msg['Subject']='임시비밀번호를 발송합니다.'
+# msg['Subject']='임시비밀번호를 발송합니다.'# 제목
 # # 메일서버정보
 # s=smtplib.SMTP('smtp.naver.com',587)#
 # # 메일서버접근
