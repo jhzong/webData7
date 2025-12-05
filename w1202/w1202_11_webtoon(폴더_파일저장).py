@@ -18,6 +18,7 @@ with open("webtoon_browser.html","r",encoding="utf8") as f:
 #     print(li.find('img')['src'])
 #     # request url 정보를 가져옴. jpg->jpg정보를 가져옴.
 #     img_req=requests.get(li.find('img')['src'],headers=headers)
+# # 폴더를 만들어 파일저장
 #     os.makedirs('webtoon',exist_ok=True)# 폴더가 없으면 생성함
 #     # if not 'webtoon'.exist():
 #     #     os.makedirs('webtoon')# 폴더가 있는지 확인 후 파일 저장
